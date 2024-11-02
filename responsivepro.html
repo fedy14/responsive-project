@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile Card</title>
+    <link rel="stylesheet" href="mediac.css">
+</head>
+
+<body>
+    <div class="profile-card">
+        <img src="fedy.JPG"
+            alt="Profile Photo" class="profile-image" height="200" />
+        <div>
+            <h1 class="profile-name">Fedy Jean Pierre</h1>
+            <p class="bio">Web Developer and Forex Trader. Passionate about <span>Digitale World .</span></p>
+            <div class="social-links">
+                <a href="www.linkedin.com/in/fedy14">LinkedIn</a> | <a
+                    href="https://github.com/fedy14">GitHub</a> | <a
+                    href="https://x.com/pierre_fedy">X</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+      
+        toggleButton.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

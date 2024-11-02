@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  mw mete yon background-image, olye yon background-color */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: #bb751a; */
+    background-image: url(https://cdn.pixabay.com/photo/2012/04/18/01/45/world-36479_640.png);
+}
+
+/* mw yon box-shadow, mw mete background-color transparent  */
+.profile-card {
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px red, -5px -5px 10px blue;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.profile-image {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* mw ogmante font-size la e mw change koule */
+.profile-name {
+    font-size: 2em;
+    color: #be0f0f;
+    margin-bottom: 8px;
+}
+
+/* section mw mete */
+.bio {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+span {
+    font-size: 1.5em;
+    color: #a13210;
+}
+
+.profile-bio {
+    font-size: 1em;
+    color: #fffefe;
+    margin-bottom: 12px;
+}
+
+.social-links a {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    .profile-card {
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .profile-image {
+        width: 180px;
+        margin-right: 20px;
+    }
+
+    .profile-name {
+        font-size: 2em;
+    }
+
+    .profile-bio {
+        font-size: 1.1em;
+    }
+}
